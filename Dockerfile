@@ -1,4 +1,7 @@
 FROM hashicorp/packer
 
-RUN apk add ansible
+RUN apk --no-cache add ansible
 
+ENV USER ansible
+
+ENTRYPOINT []
